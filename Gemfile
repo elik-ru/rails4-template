@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -43,3 +43,14 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails_admin'
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+gem 'omniauth'
+gem 'cancan'
+gem 'paper_trail', '~> 3.0.1'
+gem 'rails_admin_charts'
+gem 'rails_admin_toggleable'
+gem 'rolify'
