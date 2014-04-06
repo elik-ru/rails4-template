@@ -5,6 +5,8 @@ I18n.default_locale = :ru
 
 RailsAdmin.config do |config|
 
+  config.main_app_name = ["RailsAdmin", "BackOffice"]
+
   ### Popular gems integration
 
   # == Devise ==
@@ -36,4 +38,19 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+  
+  
+  Rails.application.eager_load!
+  ActiveRecord::Base.descendants.each do |imodel|
+	  
+    config.model "#{imodel}" do
+      list do
+        exclude_fields :created_at, :updated_at
+      end
+    end
+  end
+  
+  config.label_methods << :email
+  config.label_methods << :description 
+  
 end

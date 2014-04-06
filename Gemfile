@@ -54,3 +54,5 @@ gem 'paper_trail', '~> 3.0.1'
 gem 'rails_admin_charts'
 gem 'rails_admin_toggleable'
 gem 'rolify'
+
+gem 'bootstrap-sass'
